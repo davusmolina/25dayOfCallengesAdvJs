@@ -13,7 +13,6 @@ function wrapGifts(gifts) {
 	});
 	wrappedGifts.unshift('*'.repeat(totalLength + 2));
 	wrappedGifts.push('*'.repeat(totalLength + 2));
-	console.log(wrappedGifts);
 	return wrappedGifts;
 }
 

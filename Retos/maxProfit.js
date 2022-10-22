@@ -30,29 +30,6 @@ function maxProfit(prices) {
 			throw new Error('The argument must be an array of numbers');
 		}
 	});
-	function findMax(array) {
-		let largest = 0;
-		let largestIndex;
-		array.forEach((num) => {
-			if (num > largest) {
-				largest = num;
-				largestIndex = array.indexOf(num);
-			}
-		});
-		return [largest, largestIndex];
-	}
-	function smallestToLeft(array, index) {
-		let smallestToLeft = array[0];
-		array.forEach((price) => {
-			if (price < smallestToLeft) {
-				const smallestIndex = array.indexOf(price);
-				if (smallestIndex < index) {
-					smallestToLeft = price;
-				}
-			}
-		});
-		return smallestToLeft;
-	}
 
 	let [largestPrice, largestIndex] = findMax(prices);
 	let smallestPriceToLeft = smallestToLeft(prices, largestIndex);
