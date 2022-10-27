@@ -9,9 +9,9 @@ describe('describe', () => {
 	it('should throw a error when the parameter its not an array', () => {
 		expect(() => fixFiles()).toThrow('The argument must be an array');
 	});
-	it('should throw a error when the parameter its not an array of strings', () => {
+	it('should throw a error when the second parameter its not an array of strings', () => {
 		expect(() => fixFiles(['1', 2])).toThrow(
-			'The argument must be an array of strings'
+			'The second argument must be an array of strings'
 		);
 	});
 	it('should return an array', () => {

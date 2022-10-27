@@ -6,7 +6,7 @@ function fixFiles(files) {
 	const fixedFiles = [];
 	files.forEach((file) => {
 		if (typeof file !== 'string') {
-			throw new Error('The argument must be an array of strings');
+			throw new Error('The second argument must be an array of strings');
 		}
 		if (numberFiles.hasOwnProperty(file)) {
 			numberFiles[file] += 1;
