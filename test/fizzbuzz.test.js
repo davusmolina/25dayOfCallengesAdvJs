@@ -3,10 +3,10 @@ import { describe, it } from 'vitest';
 import { fizzBuzz } from '../Retos/fizzbuzz';
 
 describe('describe', () => {
-	it('should be a fuction', () => {
+	it('should be a function', () => {
 		expect(typeof fizzBuzz).toBe('function');
 	});
-	it('should throw a error when the paramater its not a number', () => {
+	it('should throw a error when the parameter its not a number', () => {
 		expect(() => fizzBuzz()).toThrow('a must be a number');
 	});
 	it('should return 1 if the parameter provided is 1', () => {
