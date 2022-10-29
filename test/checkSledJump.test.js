@@ -18,19 +18,19 @@ describe('tests for checkSledJump', () => {
 		const res = checkSledJump([1, 2, 3, 2, 1]);
 		expect(typeof res).toBe('boolean');
 	});
-	it('checkSledJump must return a true if the numbers go up and down in the right way', () => {
+	it('checkSledJump must return true if the numbers go up and down in the right way', () => {
 		expect(checkSledJump([1, 2, 3, 2, 1])).toBe(true);
 		expect(checkSledJump([0, 1, 0])).toBe(true);
 		expect(checkSledJump([0, 3, 2, 1])).toBe(true);
 		expect(checkSledJump([0, 1000, 1])).toBe(true);
 	});
-	it('checkSledJump must return a false if the numbers do not go up and down in the right way', () => {
+	it('checkSledJump must return false if the numbers do not go up and down in the right way', () => {
 		expect(checkSledJump([2, 4, 4, 6, 2])).toBe(false);
 	});
-	it('checkSledJump must return a false if the numbers do not go up and down in the right way', () => {
+	it('checkSledJump must return false if the numbers do not go up and down in the right way', () => {
 		expect(checkSledJump([1, 2, 3])).toBe(false);
 	});
-	it('checkSledJump must return a false if the numbers do not go up and down in the right way', () => {
+	it('checkSledJump must return false if the numbers do not go up and down in the right way', () => {
 		expect(checkSledJump([1, 2, 3, 2, 1, 2, 3])).toBe(false);
 	});
 });
