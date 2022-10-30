@@ -13,17 +13,11 @@ const ovejas = [
 ];
 
 function contarOvejas(ovejas) {
-	const sheepsInRed = ovejas.filter((oveja) => oveja.color === 'rojo');
-	const sheepsFiltered = sheepsInRed
+	const sheepInRed = ovejas.filter((oveja) => oveja.color === 'rojo');
+	const sheepFiltered = sheepInRed
 		.filter((oveja) => oveja.name.toLowerCase().includes('a'))
 		.filter((oveja) => oveja.name.toLowerCase().includes('n'));
-
-	// const sheepsFiltered = [];
-	// sheepsFiltered.push(sheepsInRed);
-	// sheepsFiltered.push(sheepsWhitNAndA);
-	return sheepsFiltered;
+	return sheepFiltered;
 }
-
-console.log(contarOvejas(ovejas));
 
 export { contarOvejas };

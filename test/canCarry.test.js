@@ -6,7 +6,7 @@ describe('tests for canCarry', () => {
 	it('canCarry must be a function', () => {
 		expect(typeof canCarry).toBe('function');
 	});
-	it('The first argument must be an array', () => {
+	it('The first argument must be an number', () => {
 		expect(() => canCarry('', [])).toThrow(
 			'The first argument must be a number'
 		);
